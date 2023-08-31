@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+      </style>
+</head>
+<body>
+    <section class="flex-container">
+        <div class = "game-container">
+            <h1>Rock, Paper, Scissors</h1>
+        <h4>With Decision Tree</h4>
+        <h3>Round <span class = "roundNumber">0</span> out of 3</h3>
+        <h2 class = "announceWinner"></h2>
+        <ul class="scores">
+            <li class="score"><h2 id = "score-player">Player: 0</h2></li>
+            <li class="score"><h2 id="score-comp">Computer: 0</h2></li>
+        </ul>
+        <button class="playAgain">Play Again!</button>
+        <section class = "game-display">
+            <section class="player-result result">
+                <h2>Player Chose: </h2>
+                <div class = "asset-show"><img class="playerEmoji" width = "250px"></div>
+            </section>
+            <section class="comp-result result">
+                <h2>Computer Chose: </h2>
+                <div class = "asset-show"><img class="compEmoji" width = "250px"></div>
+            </section>
+        </section>
+        <section class="buttons">
+            <ul class = "buttons-list">
+                <li>
+                    <button class="bttn rock" value="rock"><span>🗿</span></button>
+                </li>
+                <li>
+                    <button class="bttn paper" value = "paper"><span>🧾</span></button>
+                </li>
+                <li>
+                    <button class="bttn scissors" value = "scissors"><span>✂️</span></button>
+                </li>
+            </ul>
+        </section>
+        </div>
+    </section>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
